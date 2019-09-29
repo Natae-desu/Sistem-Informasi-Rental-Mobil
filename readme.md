@@ -48,6 +48,7 @@
    6 Update Status Pekerjaan
       - Notif Email ke Admin bila jadwal menyetir sudah selesai
 
+
    Customer :
 
    1 Login
@@ -81,6 +82,7 @@
    Label Kota : Menampilkan kota Customer maupun Supir
 
    Keranjang  : Menampilkan Pesanan dan Harga
+   
 
    Mobile
 
@@ -89,7 +91,7 @@
    Home       : Menampilkan tampilan awal yang berisi promo-promo menarik, Jenis Mobil dan lainnya
 
    Pesanan    : Menampilkan pesanan yang sudah diselesaikan atau pesanan yang sedang berjalan
-   
+
    Inbox      : Menampilkan informasi penting berupa tips dan promo
 
    
