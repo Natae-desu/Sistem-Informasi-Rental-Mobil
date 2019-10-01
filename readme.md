@@ -11,24 +11,25 @@
 
    1 Login
 
-   2 Input Data Jenis Mobil
+   2 Lihat data customer
 
-   3 Input Data Harga sesuai Jenis Mobil
+   3 Input Data Jenis Mobil
 
-   4 Input Data Supir
+   4 Input Data Harga sesuai Jenis Mobil
+
+   5 Input Data Supir
       -Notifikasi Email ke Supir
 
-   5 Input Data Customer
+   6 Input Data Customer
       -Notifikasi Email ke Customer
-
-   6 Input Jadwal Menyetir untuk Supir
-       -Notifikasi Email ke Supir
-
-   7 Verifikasi Data Mobil yang Tersedia 
+      
+   7 Verifikasi pesanan mobil customer
 
    8 Fitur Diskusi
 
-   9 JIka ada promo maka sistem akan memberi tahukan kepada customer melalui notifikasi E-mail
+   9 Input promo 
+      Sistem akan memberi tahukan kepada customer melalui notifikasi E-mail
+   
 
 ## Mobile
 
@@ -38,14 +39,12 @@
 
    2 Rubah Password
 
-   3 Menerima Jadwal Menyetir
-
-   4 Menyetujui Jadwal Menyetir
+   3 Menyetujui atau menolak Jadwal Menyetir
       -Notifikasi Email ke Admin dan Customer
 
-   5 Fitur Diskusi
+   4 Fitur Diskusi
 
-   6 Update Status Pekerjaan
+   5 Update Status Pekerjaan
       - Notif Email ke Admin bila jadwal menyetir sudah selesai
 
 
