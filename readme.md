@@ -5,7 +5,6 @@
     * Supir
     * Customer
 
-    nanda test commit
 
 ## Web
 

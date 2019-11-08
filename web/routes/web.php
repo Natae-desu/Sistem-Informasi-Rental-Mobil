@@ -10,7 +10,24 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.login');
 });
+Auth::routes();
+Route::middleware("auth")->group(function () {
+    Route::get('/home', function(){
+        return view('pages.dashboard');
+    })->name("home");
+
+Route::resource('supir', 'supircontroller');
+});
+
+
+
+Route::get("/register",function(){
+    return view('pages.register');
+})->name("register")->middleware("guest");
+Route::get("/login",function(){
+    return view('pages.login');
+})->name("login")->middleware("guest");
+
