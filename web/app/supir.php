@@ -8,5 +8,5 @@ class supir extends Model
 {
     //
     protected $table="tblsupir";
-    protected $fillable = ['nama','telepon','email'];
+    protected $fillable = ['nama','alamat','telepon','email'];
 }

@@ -1,22 +1,20 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-use App\supir;
-
-class supircontroller extends Controller
+use App\Mobil;
+class MobilController extends Controller
 {
-     /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $data = supir::paginate(10);
-        return view("pages.supir.list",compact("data"));
+        $data = Mobil::paginate(10);
+        return view("pages.mobil.list",compact("data"));
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -24,7 +22,7 @@ class supircontroller extends Controller
      */
     public function create()
     {
-        return view("pages.supir.form");
+        return view("pages.mobil.form");
     }
     /**
      * Store a newly created resource in storage.
@@ -35,14 +33,18 @@ class supircontroller extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama' => 'required|max:50',
-            'alamat' => 'required|max:80',
-            'telepon' => 'required|max:25',
-            'email' => 'required|email|max:50'
+            'merek' => 'required|max:50',
+            'type' => 'required|max:50',
+            'tahun' => 'required|max:4',
+            'bbm' => 'required|max:50',
+            'harga' => 'required|max:50'
+
         ]);
-        supir::create($request->except("_token"));
-        $request->session()->flash("info","Berhasil Tambah Data Supir");
-        return redirect()->route("supir.index");
+        Mobil::create($request->except("_token"));
+
+        $request->session()->flash("info","Berhasil Tambah Data Mobil");
+
+        return redirect()->route("mobil.index");
     }
     /**
      * Display the specified resource.
@@ -52,8 +54,12 @@ class supircontroller extends Controller
      */
     public function show($id)
     {
-        $data = supir::find($id);
-        return view("pages.supir.form",compact("data"));
+        //
+
+        $data = Mobil::find($id);
+    
+        return view("pages.mobil.form",compact("data"));
+    
     }
     /**
      * Show the form for editing the specified resource.
@@ -74,16 +80,21 @@ class supircontroller extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'nama' => 'required|max:50',
-            'alamat' => 'required|max:80',
-            'telepon' => 'required|max:25',
-            'email' => 'required|email|max:50'
-        ]);
-        supir::where("id",$id)
+
+            $request->validate([
+                'merek' => 'required|max:50',
+                'type' => 'required|max:50',
+                'tahun' => 'required|max:4',
+                'bbm' => 'required|max:50',
+                'harga' => 'required|max:50'
+            ]);
+
+        Mobil::where("id",$id)
                 ->update($request->except(["_token","_method"]));
-        $request->session()->flash("info","Berhasil Rubah Data supir");
-        return redirect()->route("supir.index");
+
+                $request->session()->flash("info","Berhasil Rubah Data Mobil");
+
+        return redirect()->route("mobil.index");
     }
     /**
      * Remove the specified resource from storage.
@@ -93,8 +104,9 @@ class supircontroller extends Controller
      */
     public function destroy($id)
     {
-        supir::destroy($id);
-        return redirect()->route("supir.index")
-            ->with("info","Berhasil Hapus Data supir");
+        Mobil::destroy($id);
+
+        return redirect()->route("mobil.index")
+            ->with("info","Berhasil Hapus Data Mobil");
     }
 }

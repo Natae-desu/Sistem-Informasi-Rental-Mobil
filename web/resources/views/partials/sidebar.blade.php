@@ -48,7 +48,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route("supir.index") }}" class="nav-link">
+                            <a href="{{ route("mobil.index") }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Mobil</p>
                             </a>
@@ -75,13 +75,14 @@
                         <li class="nav-item">
                             <a href="./index.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Laporan mingguan</p>
+                                <p>Laporan Pemesanan</p>
+                               
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="./index2.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Laporan Bulanan</p>
+                                <p>Laporan P.Mobil</p>
                             </a>
                         </li>
                     </ul>

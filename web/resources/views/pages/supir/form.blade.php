@@ -44,10 +44,10 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="nama">Alamat</label>
+                        <label for="alamat">Alamat</label>
                         <input type="text"
                             class="form-control @error("alamat") is-invalid @enderror"
-                            name="alamat" value={{ (isset($data)?$data->nama:old("alamt")) }}>
+                            name="alamat" value={{ (isset($data)?$data->alamat:old("alamat")) }}>
                         @error("alamat")
                             <div class="invalid-feedback">
                                 {{ $message }}
