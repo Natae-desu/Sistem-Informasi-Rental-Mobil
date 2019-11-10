@@ -37,6 +37,7 @@
                         <tr>
                             <th>No.</th>
                             <th>Nama</th>
+                            <th>Alamat</th>
                             <th>Telepon</th>
                             <th>Email</th>
                             <th colspan=2>Action</th>
@@ -47,6 +48,7 @@
                             <tr>
                                 <td>{{ $loop->iteration + (10*($data->currentPage()-1)) }}</td>
                                 <td>{{ $item->nama }}</td>
+                                <td>{{ $item->alamat }}</td>
                                 <td>{{ $item->telepon }}</td>
                                 <td>{{ $item->email }}</td>
                                 <td><a href="{{ route("supir.show",[$item->id]) }}" class="btn btn-warning btn-block"><i class="fa fa-pencil-alt"></i> Rubah</a></td>

@@ -11,7 +11,7 @@
                 <div class="col-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route("home") }}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route("staff.index") }}">List Supir</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route("supir.index") }}">List Supir</a></li>
                         <li class="breadcrumb-item active">Form Supir</li>
                     </ol>
                 </div>
@@ -38,6 +38,17 @@
                             class="form-control @error("nama") is-invalid @enderror"
                             name="nama" value={{ (isset($data)?$data->nama:old("nama")) }}>
                         @error("nama")
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">Alamat</label>
+                        <input type="text"
+                            class="form-control @error("alamat") is-invalid @enderror"
+                            name="alamat" value={{ (isset($data)?$data->nama:old("alamt")) }}>
+                        @error("alamat")
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>

@@ -44,7 +44,13 @@
                         <li class="nav-item">
                             <a href="./index2.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Departmen</p>
+                                <p>User</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route("supir.index") }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Mobil</p>
                             </a>
                         </li>
                     </ul>
@@ -69,19 +75,13 @@
                         <li class="nav-item">
                             <a href="./index.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Laporan 1</p>
+                                <p>Laporan mingguan</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="./index2.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Laporan 2</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./index2.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Laporan 3</p>
+                                <p>Laporan Bulanan</p>
                             </a>
                         </li>
                     </ul>

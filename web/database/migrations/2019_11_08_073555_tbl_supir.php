@@ -16,6 +16,7 @@ class TblSupir extends Migration
         Schema::create('tblsupir', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string("nama",50);
+            $table->string("alamat",80);
             $table->string("telepon",25);
             $table->string("email",50);
             $table->timestamps();
@@ -28,6 +29,6 @@ class TblSupir extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tblstaff');
+        Schema::dropIfExists('tblsupir');
     }
 }
