@@ -42,9 +42,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./index2.html" class="nav-link">
+                        <a href="{{ route("pelanggan.index") }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>User</p>
+                                <p>Pelanggan</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -55,14 +55,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
-                        <i class="nav-icon fas fa-briefcase"></i>
-                        <p>
-                            Assign Kerja
-                        </p>
-                    </a>
-                </li>
+        
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>
@@ -71,6 +64,7 @@
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
+
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="./index.html" class="nav-link">
@@ -85,6 +79,7 @@
                                 <p>Laporan P.Mobil</p>
                             </a>
                         </li>
+                    </a>
                     </ul>
                 </li>
             </ul>
