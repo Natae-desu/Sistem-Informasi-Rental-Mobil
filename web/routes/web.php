@@ -23,6 +23,7 @@ Route::middleware("auth")->group(function () {
 
 Route::resource('supir', 'supircontroller');
 Route::resource('mobil', 'Mobilcontroller');
+Route::resource('pelanggan', 'pelanggancontroller');
 });
 
 
