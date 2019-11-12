@@ -27,11 +27,7 @@
             <div class="card-header bg-primary text-white">
                 <h3 class="card-title">List pelanggan</h3>
             </div>
-            <div class="card-body">
-                <div class="float-right mb-2">
-                    <a href="{{ route("pelanggan.create") }}" class="btn btn-success">
-                        <i class="fa fa-plus"></i> Tambah</a>
-                </div>
+            
                 <table class="table table-bordered">
                     <thead>
                         <tr>
