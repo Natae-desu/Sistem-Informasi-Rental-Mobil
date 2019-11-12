@@ -129,6 +129,15 @@
                             <div id="calendar" style="width: 50%"></div>
                         </div>
                     <!-- Map card -->
+                   
+                    <!-- /.card -->
+
+                    
+                       
+                       
+                        <!-- /.card-footer -->
+                    </div>
+                    <!-- /.card -->
                     <div class="card bg-gradient-primary">
                         <div class="card-header border-0">
                             <h3 class="card-title">
@@ -173,15 +182,6 @@
                             <!-- /.row -->
                         </div>
                     </div>
-                    <!-- /.card -->
-
-                    
-                       
-                       
-                        <!-- /.card-footer -->
-                    </div>
-                    <!-- /.card -->
-
                     
                     </div>
                     <!-- /.card -->

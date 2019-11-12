@@ -30,37 +30,39 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-pen"></i>
                         <p>
-                            Input
+                            Data
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route("supir.index") }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Supir</p>
+                                <i class="fas fa-user-alt"></i>
+                                    <p>Supir</p>
                             </a>
                         </li>
+
                         <li class="nav-item">
-                        <a href="{{ route("pelanggan.index") }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Pelanggan</p>
+                            <a href="{{ route("pelanggan.index") }}" class="nav-link">
+                                <i class="fas fa-user-alt"></i>
+                                    <p>Pelanggan</p>
                             </a>
                         </li>
+
                         <li class="nav-item">
                             <a href="{{ route("mobil.index") }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Mobil</p>
+                                <i class="fas fa-car"></i>
+                                    <p> Mobil</p>
                             </a>
                         </li>
+
                     </ul>
                 </li>
         
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>
-                        <p>
-                            Laporan
+                        <p> Laporan Mobil
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -68,20 +70,21 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="./index.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Laporan Pemesanan</p>
-                               
+                                <i class="nav-icon fas fa-file"></i>
+                                    <p>Laporan Pemesanan</p>
                             </a>
-                        </li>
+                            </li>
                         <li class="nav-item">
                             <a href="./index2.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Laporan P.Mobil</p>
+                            <i class="nav-icon fas fa-file"></i>
+                                <p>Laporan Pemakaian</p>
                             </a>
                         </li>
                     </a>
                     </ul>
                 </li>
+
+               
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
