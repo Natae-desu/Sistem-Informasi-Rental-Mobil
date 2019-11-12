@@ -33,6 +33,7 @@ class MobilController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'kode' => 'required|max:5',
             'merek' => 'required|max:50',
             'type' => 'required|max:50',
             'tahun' => 'required|max:4',
@@ -82,6 +83,7 @@ class MobilController extends Controller
     {
 
             $request->validate([
+                'kode' => 'required|max:5',
                 'merek' => 'required|max:50',
                 'type' => 'required|max:50',
                 'tahun' => 'required|max:4',

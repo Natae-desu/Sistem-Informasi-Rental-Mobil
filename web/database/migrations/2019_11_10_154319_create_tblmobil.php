@@ -15,6 +15,7 @@ class CreateTblmobil extends Migration
     {
         Schema::create('tblmobil', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('kode',5);
             $table->string('merek',50);
             $table->string('type',50);
             $table->string('tahun',4);

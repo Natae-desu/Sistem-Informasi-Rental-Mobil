@@ -9,5 +9,5 @@ class Mobil extends Model
     //
     protected $table="tblmobil";
 
-    protected $fillable = ['merek','type','tahun','bbm','harga'];
+    protected $fillable = ['kode','merek','type','tahun','bbm','harga'];
 }

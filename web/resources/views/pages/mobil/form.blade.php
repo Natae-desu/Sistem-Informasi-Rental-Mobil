@@ -33,6 +33,16 @@
                         @method("PUT")
                     @endif
                     <div class="form-group">
+                            <label for="kode">Kode</label>
+                            <input type="text"
+                             class="form-control @error("kode") is-invalid @enderror" name="kode" value={{ (isset($data)?$data->kode:old("kode"))}} >
+                             @error("kode")
+                                <div class="invalid-feedback">
+                                    {{ $message}}
+                                    </div>
+                            @enderror
+                        </div>
+                    <div class="form-group">
                         <label for="merek">Merek</label>
                         <input type="text"
                          class="form-control @error("merek") is-invalid @enderror" name="merek" value={{ (isset($data)?$data->merek:old("merek"))}} >

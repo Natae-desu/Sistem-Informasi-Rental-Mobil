@@ -43,15 +43,10 @@
                         </li>
 
                         <li class="nav-item">
-<<<<<<< HEAD
-                            <a href="user.index" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>User</p>
-=======
+
                             <a href="{{ route("pelanggan.index") }}" class="nav-link">
                                 <i class="fas fa-user-alt"></i>
                                     <p>Pelanggan</p>
->>>>>>> 683ce04bc9c0b15012d48d47bdc707d8ea4fae3b
                             </a>
                         </li>
 
@@ -75,13 +70,13 @@
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link">
+                            <a href="{{ route('list.laporanpemesanan') }}" class="nav-link">
                                 <i class="nav-icon fas fa-file"></i>
                                     <p>Laporan Pemesanan</p>
                             </a>
                             </li>
                         <li class="nav-item">
-                            <a href="./index2.html" class="nav-link">
+                            <a href="{{ route('laporanpemakaian.list') }}" class="nav-link">
                             <i class="nav-icon fas fa-file"></i>
                                 <p>Laporan Pemakaian</p>
                             </a>

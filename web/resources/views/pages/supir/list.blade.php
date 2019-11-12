@@ -40,7 +40,7 @@
                             <th>Alamat</th>
                             <th>Telepon</th>
                             <th>Email</th>
-                            <th colspan=2>Action</th>
+                            <th colspan=3>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,6 +51,7 @@
                                 <td>{{ $item->alamat }}</td>
                                 <td>{{ $item->telepon }}</td>
                                 <td>{{ $item->email }}</td>
+                                <td><a href="" class="btn btn-info btn-block"><i class="fa fa-redo"></i> Reset</a></td>
                                 <td><a href="{{ route("supir.show",[$item->id]) }}" class="btn btn-warning btn-block"><i class="fa fa-pencil-alt"></i> Rubah</a></td>
                                 <td>
                                     <form action="{{ route("supir.destroy",[$item->id]) }}"

@@ -36,6 +36,7 @@
                     <thead>
                         <tr>
                             <th>No.</th> 
+                            <th>Kode</th> 
                             <th>Merek</th>
                             <th>Type</th>
                             <th>Tahun</th>
@@ -48,6 +49,7 @@
                         @foreach ($data as $item)
                             <tr>
                                 <td>{{ $loop->iteration + ($data->count()*($data->currentPage()-1)) }}</td>
+                                <td>{{ $item->kode }}</td>
                                 <td>{{ $item->merek }}</td>
                                 <td>{{ $item->type }}</td>
                                 <td>{{ $item->tahun }}</td>
