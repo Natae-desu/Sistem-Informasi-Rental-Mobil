@@ -85,6 +85,13 @@
                     </ul>
                 </li>
 
+                    <li class="nav-item">
+                            <a href="{{ route('list.transaksi') }}" class="nav-link">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                    <p>Transaksi</p>
+                            </a>
+                    </li>
+
                
             </ul>
         </nav>

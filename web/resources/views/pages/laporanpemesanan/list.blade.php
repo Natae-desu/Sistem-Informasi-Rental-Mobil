@@ -45,7 +45,7 @@
                             <tr>
                                 <td>No.1 </td>
                                 <td>1 Januari</td>
-                                <td>Januari s/d 3 Januari</td>
+                                <td>2 Januari s/d 3 Januari</td>
                                 <td>09897676</td>
                                 <td>Adriyana Fajar</td>
                                 <td>Supriyatno</td>
@@ -55,8 +55,8 @@
                                 <td>900.000</td>
                             </tr>                  
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td>No.2</td>
+                                <td>3 Januari</td>
                                 <td>6 Januari s/d 8 Januari</td>
                                 <td>89787654</td>
                                 <td>Miranto Jaya</td>
@@ -67,7 +67,7 @@
                                 <td>900.000</td>
                             </tr>
                             <tr>
-                                <td>No.2 </td>
+                                <td>No.3 </td>
                                 <td>6 Januari</td>
                                 <td>6 januari s/d 7 Januari</td>
                                 <td>76768854</td>
