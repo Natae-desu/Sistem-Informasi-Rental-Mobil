@@ -21,32 +21,16 @@
             <div class="card">
                 <div class="card-header"><h4>Daftar Mobil</h4></div>
                 <div class="card-body">
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Honda Jazz</th>
-                                <th>Toyota Avanza</th>
-                                <th>Toyota Veloz</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-                            
-                            <tr>
-                                <td><i class="fas fa-car"></i></td>
-                                <td><i class="fas fa-car"></i></td>
-                                <td><i class="fas fa-car"></i></td>
-                            </tr>                
-
-                        </tbody>
-                        <tfoot>
-                            <tr> 
-                                <td><a href="{{route('laporanpemakaian.form')}}" class="btn btn-warning btn-block">Lihat</a></td>
-                                <td><a href="" class="btn btn-warning btn-block">Lihat</a></td>
-                                <td><a href="" class="btn btn-warning btn-block">Lihat</a></td>
-                            </tr>
-                        </tfoot>
-                    </table>
+                   <div class="form-group">
+                       <label for="level">Pilih Daftar Mobil</label>
+                       <select name="level" id="level" class="form-control">
+                           <option value="a"> Honda Jazz </option>
+                           <option value="a"> Toyota Arya </option>
+                           <option value="a"> Toyota Avanza </option>
+                       </select>
+                       <br>
+                       <div class="col-12"><a href="{{route('laporanpemakaian.form')}}" class="btn btn-warning btn-block">Lihat</a></div>
+                   </div> 
                 </div>
             </div>
         </section>
