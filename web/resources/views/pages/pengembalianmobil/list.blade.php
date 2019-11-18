@@ -21,7 +21,6 @@
                 <div class="card-header"><h4>Daftar Pengembalian</h4></div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">
-                            <a href="{{route('list.pengembalianmobil')}}" class="btn btn-success float-right mb-2">Cetak</a>
                             <h6><b>Januari 2019</b></h6>
                         <thead>
                             <tr>

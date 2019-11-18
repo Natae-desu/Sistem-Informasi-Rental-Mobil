@@ -6,10 +6,7 @@ use Illuminate\Http\Request;
 
 class pengembaliancontroller extends Controller
 {
-    {
-        //
-        public function pengembalianmobil(){
+        public function pengembalianmobil(){ 
             return view("pages.pengembalianmobil.list");
         }
-    }
 }
