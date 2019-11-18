@@ -25,7 +25,7 @@
                        <label for="level">Pilih Daftar Mobil</label>
                        <select name="level" id="level" class="form-control">
                            <option value="a"> Honda Jazz </option>
-                           <option value="a"> Toyota Arya </option>
+                           <option value="a"> Toyota inova </option>
                            <option value="a"> Toyota Avanza </option>
                        </select>
                        <br>

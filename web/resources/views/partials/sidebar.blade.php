@@ -59,7 +59,34 @@
 
                     </ul>
                 </li>
-        
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                         <i class="fas fa-car"></i>
+                        <p> Status Mobil
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('list.laporanpemesanan') }}" class="nav-link">
+                            <i class="fas fa-car"></i>
+                                    <p>Pemakaian mobil</p>
+                            </a>
+                            </li>
+                        <li class="nav-item">
+                            <a href="{{ route('pengembalianmobil') }}" class="nav-link">
+                            <i class="fas fa-car"></i>
+                                <p>Pengembalian mobil</p>
+                            </a>
+                        </li>
+                    </a>
+                    </ul>
+                </li>
+
+
+    
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>

@@ -24,7 +24,11 @@ Route::middleware("auth")->group(function () {
 Route::resource('supir', 'supircontroller');
 Route::resource('mobil', 'Mobilcontroller');
 Route::resource('pelanggan', 'pelanggancontroller');
+
+Route::resource('pengembalianmobil/list', 'pengembaliancontroller@pengembalianmobil')->name('pengambilanmobil') ;
+
 Route::get('transaksi/list', 'TransaksiController@transaksilist')->name('list.transaksi');
+
 Route::get('laporanpemesanan/list', 'Laporan1Controller@laporan1list')->name('list.laporanpemesanan');
 Route::get('laporanpemakaian/list', 'Laporan2Controller@laporan2list')->name('laporanpemakaian.list');
 Route::get('laporanpemakaian/laporan1', 'Form1Controller@form1list')->name('laporanpemakaian.form');
