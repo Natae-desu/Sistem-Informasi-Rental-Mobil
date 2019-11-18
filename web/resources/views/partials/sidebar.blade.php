@@ -70,7 +70,7 @@
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('list.laporanpemesanan') }}" class="nav-link">
+                            <a href="{{route('statuspmobil.list') }}" class="nav-link">
                             <i class="fas fa-car"></i>
                                     <p>Pemakaian mobil</p>
                             </a>
@@ -119,7 +119,11 @@
                             </a>
                     </li>
 
+<<<<<<< HEAD
                     
+=======
+                                
+>>>>>>> cd42707c4a0d54dcbd35980fb18eb787eb288024
                  
 
                
