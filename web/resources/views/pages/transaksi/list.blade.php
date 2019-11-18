@@ -45,7 +45,7 @@
                                 <td>1 Januari 2019 </td>
                                 <td>Adriyana Fajar</td>
                                 <td>Suzuki Ertiga</td>
-                                <td><a href="" class="btn btn-success float-center mb-2"><i class="fas fa-search">Cek</i></td>
+                                <td><a href="{{ route('cekstatus') }}" class="btn btn-success float-center mb-2"><i class="fas fa-search">Cek</i></td>
                                 <td><a href="" class="btn btn-info btn-block"><i class="fas fa-check-circle"></i>Approve</a></td>
                                 <td><a href="" class="btn btn-danger btn-block"><i class="fas fa-ban"></i>Cancel</a></td>
                             </tr>
