@@ -25,8 +25,8 @@ Route::resource('supir', 'supircontroller');
 Route::resource('mobil', 'Mobilcontroller');
 Route::resource('pelanggan', 'pelanggancontroller');
 
-Route::resource('pengembalianmobil/list', 'pengembaliancontroller@pengembalianmobil')->name('pengambilanmobil') ;
-
+Route::get('pengembalianmobil/list', 'pengembaliancontroller@pengembalianmobil')->name('pengambilanmobil') ;
+Route::get('pengembalianmobil/form', 'PengembalianmobilController@pengembalianmobil1')->name('pengambilanmobil1.form') ;
 Route::get('transaksi/list', 'TransaksiController@transaksilist')->name('list.transaksi');
 
 Route::get('laporanpemesanan/list', 'Laporan1Controller@laporan1list')->name('list.laporanpemesanan');

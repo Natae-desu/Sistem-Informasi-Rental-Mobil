@@ -21,7 +21,7 @@
                 <div class="card-header"><h4>Daftar Pengembalian</h4></div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">
-                            <a href="{{route('list.pengembalianmobil')}}" class="btn btn-success float-right mb-2">Cetak</a>
+                            <a href="{{ route("pengambilanmobil1.form") }}" class="btn btn-success float-right mb-2">Tambah</a>
                             <h6><b>Januari 2019</b></h6>
                         <thead>
                             <tr>
@@ -47,15 +47,7 @@
                                 <td>3 Januari </td>
                             </tr>    
 
-                            <tr>
-                                <td>02</td>
-                                <td>0989123</td>
-                                <td>Budi</td>
-                                <td>Toyota Avanza</td>
-                                <td>2 Hari</td>
-                                <td>1 Januari </td>
-                                <td>2 Januari </td>
-                            </tr>                  
+                                          
                         </tbody>
                        
                     </table>
