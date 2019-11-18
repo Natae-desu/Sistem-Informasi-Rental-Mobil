@@ -28,6 +28,8 @@ Route::get('transaksi/list', 'TransaksiController@transaksilist')->name('list.tr
 Route::get('laporanpemesanan/list', 'Laporan1Controller@laporan1list')->name('list.laporanpemesanan');
 Route::get('laporanpemakaian/list', 'Laporan2Controller@laporan2list')->name('laporanpemakaian.list');
 Route::get('laporanpemakaian/laporan1', 'Form1Controller@form1list')->name('laporanpemakaian.form');
+Route::get('statuspmobil/list', 'StatusmobilController@statusmobillist')->name('statuspmobil.list');
+Route::get('statuspmobil/status', 'StatusController@statusmobilstatus')->name('statuspmobil.status');
 
 });
 
