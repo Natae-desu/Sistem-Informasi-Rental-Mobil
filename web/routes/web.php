@@ -20,6 +20,9 @@ Route::middleware("auth")->group(function () {
     Route::get('/home', function(){
         return view('pages.dashboard');
     })->name("home");
+    Route::get('/cek', function(){
+        return view('pages.transaksi.statuscek');
+    })->name("cekstatus");
 
 Route::resource('supir', 'supircontroller');
 Route::resource('mobil', 'Mobilcontroller');
@@ -28,6 +31,8 @@ Route::resource('pelanggan', 'pelanggancontroller');
 Route::get('pengembalianmobil/list', 'pengembaliancontroller@pengembalianmobil')->name('pengembalianmobil');
 
 Route::get('transaksi/list', 'TransaksiController@transaksilist')->name('list.transaksi');
+Route::get('transaksi/cek', 'cekcontroller@status')->name('cekstatus');
+
 
 Route::get('laporanpemesanan/list', 'Laporan1Controller@laporan1list')->name('list.laporanpemesanan');
 Route::get('laporanpemakaian/list', 'Laporan2Controller@laporan2list')->name('laporanpemakaian.list');

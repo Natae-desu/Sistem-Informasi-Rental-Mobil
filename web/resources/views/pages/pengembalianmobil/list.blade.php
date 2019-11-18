@@ -7,10 +7,10 @@
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
-                <div class="col-6"><h1>Honda Jazz</h1></div>
+                <div class="col-6"><h1>Daftar Pengembalian</h1></div>
                 <div class="col-6">
                     <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item active">Kode.HZ001</li>
+                    <li class="breadcrumb-item active"></li>
                     </ol>
                 </div>
         </div>
@@ -18,7 +18,7 @@
 
     <section class="content">
             <div class="card">
-                <div class="card-header"><h4>Daftar Pengembalian</h4></div>
+                <div class="card-header"><h4></h4></div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">
                             <h6><b>Januari 2019</b></h6>
