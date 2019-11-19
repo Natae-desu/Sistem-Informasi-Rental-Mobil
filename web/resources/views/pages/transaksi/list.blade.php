@@ -29,10 +29,16 @@
                         <thead>
                             <tr>
                                 <th width=5%>No. </th>
+<<<<<<< HEAD
                                 <th>Kode Transaksi </th>
                                 <th>Nama </th>
+=======
+                                <th width=15%>Kode Transaksi </th>
+                                <th width=15%>Tanggal Transaksi </th>
+                                <th width=15%>Nama Pemesan</th>
+>>>>>>> 5ee1a8742698d303e79f2d9110cd6df96bf19a4f
                                 <th width=15%>Status</th>
-                                <th colspan="2",width=10%>Action</th>
+                                <th width=5%>Action</th>
                             </tr>
                         </thead>
 
@@ -40,9 +46,16 @@
                             <tr>
                                 <td>1 </td>
                                 <td>001321</td>
+<<<<<<< HEAD
                                 <th>Surya Anjani </th>
                                 <td><a href="" class="btn btn-warning float-center mb-2"><i class="fas fa-search">Cek</i></td>
                                     <td><a href="" class="btn btn-success float-center mb-2">Lunas</td>
+=======
+                                <td>1 Januari 2019 </td>
+                                <td>Adriyana Fajar</td>
+                                <td> <div class="badge badge-danger">pending </div></td>
+                                <td><a href="{{ route('cekstatus') }}" class="badge badge-success float-center mb-2"><i class="fas fa-search">Cek</i></td>
+>>>>>>> 5ee1a8742698d303e79f2d9110cd6df96bf19a4f
                             </tr>
                     </table>
                 </div>
