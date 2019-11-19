@@ -36,9 +36,8 @@
                     @csrf
                     <div class="form-group">
                         <label for="kodepemesan">Kode Pemesanan</label>
-                        <input type="text"
-                            class="form-control"
-                            name="kodepemesan">
+                        <br>
+                        <label> 12345678 </label>
                     </div>
                     <div class="form-group">
                         <label for="nama">Nama</label>
