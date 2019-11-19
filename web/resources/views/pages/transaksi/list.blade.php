@@ -32,9 +32,8 @@
                                 <th width=15%>Kode Transaksi </th>
                                 <th width=15%>Tanggal Transaksi </th>
                                 <th width=15%>Nama Pemesan</th>
-                                <th width=15%>Pesanan</th>
                                 <th width=15%>Status</th>
-                                <th colspan="2",width=10%>Action</th>
+                                <th width=5%>Action</th>
                             </tr>
                         </thead>
 
@@ -44,10 +43,8 @@
                                 <td>001321</td>
                                 <td>1 Januari 2019 </td>
                                 <td>Adriyana Fajar</td>
-                                <td>Suzuki Ertiga</td>
-                                <td><a href="{{ route('cekstatus') }}" class="btn btn-success float-center mb-2"><i class="fas fa-search">Cek</i></td>
-                                <td><a href="" class="btn btn-info btn-block"><i class="fas fa-check-circle"></i>Approve</a></td>
-                                <td><a href="" class="btn btn-danger btn-block"><i class="fas fa-ban"></i>Cancel</a></td>
+                                <td> <div class="badge badge-danger">pending </div></td>
+                                <td><a href="{{ route('cekstatus') }}" class="badge badge-success float-center mb-2"><i class="fas fa-search">Cek</i></td>
                             </tr>
                     </table>
                 </div>
