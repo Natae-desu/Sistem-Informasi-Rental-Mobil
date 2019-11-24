@@ -21,7 +21,7 @@
                 <div class="card-header"><h4></h4></div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">
-                            <a href="{{ route("pengambilanmobil1.form") }}" class="btn btn-success float-right mb-2">Tambah</a>
+                            
                             <h6><b>Januari 2019</b></h6>
                         <thead>
                             <tr>
@@ -32,6 +32,9 @@
                                 <th>Estimasi</th>
                                 <th>Tgl pengambilan</th>
                                 <th>tgl pengembalian</th>
+                                <th>Status</th>
+                                <th colspan=2>Action</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -45,6 +48,9 @@
                                 <td>3 Hari</td>
                                 <td>1 Januari </td>
                                 <td>3 Januari </td>
+                                <td><a href="" class="badge badge-warning float-center mb-2">Dalam Proses</td>
+                                <td><a href="" class="btn btn-success float-center mb-2">Edit</td>
+                                <td><a href="" class="btn btn-danger float-center mb-2">Hapus</td>
                             </tr>    
 
                                           

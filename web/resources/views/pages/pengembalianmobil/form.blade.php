@@ -21,7 +21,7 @@
     <div class="content">
         <div class="card">
             <div class="card-header bg-primary text-white">
-                <h3 class="card-title">Form Jenis Barang</h3>
+                <h3 class="card-title">Form Pengembalian</h3>
             </div>
             <div class="card-body">
                 <form action=''
@@ -32,70 +32,44 @@
                     @endif -->
                     <div class="form-group">
                         <label for="jenis">Kode Pemesanan</label>
-                        <input type="text"
-                            class="form-control"
-                            name="origin" value=''}>
-                         <!-- @error("origin")
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                        @enderror  -->
+                        <br>
+                        <label> 09897676 </label>
                     </div>
                     <div class="form-group">
                         <label for="jenis">Nama Pemesan</label>
-                        <input type="text"
-                            class="form-control"
-                            name="origin" value=''}>
-                         <!-- @error("origin")
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                        @enderror  -->
+                        <br>
+                        <label> Anwar </label>
                     </div>
                     <div class="form-group">
                         <label for="jenis">Mobil</label>
-                        <input type="text"
-                            class="form-control"
-                            name="origin" value=''}>
-                         <!-- @error("origin")
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                        @enderror  -->
+                        <br>
+                        <label> Toyota Innova </label>
                     </div>
                     <div class="form-group">
                         <label for="jenis">Estimasi</label>
-                        <input type="text"
-                            class="form-control"
-                            name="origin" value=''}>
-                         <!-- @error("origin")
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                        @enderror  -->
+                        <br>
+                        <label> 3 Hari </label>
                     </div>
                     <div class="form-group">
                         <label for="jenis">Tgl Pengambilan</label>
-                        <input type="text"
-                            class="form-control"
-                            name="origin" value=''}>
-                         <!-- @error("origin")
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                        @enderror  -->
+                        <br>
+                        <label> 1 Jan 2019 </label>
                     </div>
                     <div class="form-group">
                         <label for="jenis">Tgl Pengembalian</label>
-                        <input type="text"
-                            class="form-control"
-                            name="origin" value=''}>
-                         <!-- @error("origin")
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                        @enderror  -->
+                        <br>
+                        <label> 1 Jan 2019 </label>
                     </div>
+                     <div class="form-group">
+                         <label for="level"> Status </label>
+                         <select name="level" id="level"
+                         class="form-control">
+                         <option value="a">
+                             Dalam Proses </option>
+                             <option value="a">
+                                    Sudah Dikembalikan </option>
+                         </select>
+                     </div>
                     <div class="form-group float-right">
                         <button type="submit" class="btn btn-success">
                             <i class="fa fa-save"></i> Simpan
