@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"> -->
+        <link rel="stylesheet" href="css/simonika.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+        <title>SIMonika Mobile</title>
+    </head>
+    <body>
+        <div data-role="page" id="login">
+            <div data-role="header"><h1>Form Login</h1></div>
+            <div role="main" class="ui-content">
+                <div class="ui-field-contain">
+                    <label for="email">Email</label>
+                    <input type="email" name="email"
+                        placeholder="masukkan email anda">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="password">Password</label>
+                    <input type="password" name="password"
+                        placeholder="masukkan password anda">
+                </div>
+                <a href="#Home" class="ui-btn">Login</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Rich Mobil</h3>
+            </div>
+        </div>
+
+        <div data-role="page" id="Home">
+            <div data-role="panel" id="menupanel"
+                data-position="left" data-display="overlay">
+                <ul data-role="listview">
+                    <li><h1>Menu</h1></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#password">Ganti Password</a></li>
+                    <li><a href="#pesanan">Pesan</a></li>
+                    <li><a href="#pilihan">Pilihan</a></li>
+                    <li><a href="#login">Logout</a></li>
+                </ul>
+            </div>
+            <div data-role="header">
+                <a href="#menupanel" class="ui-btn-left
+                    ui-btn ui-btn-inline 
+                    ui-corner-all ui-icon-bars 
+                    ui-btn-icon-left">Menu</a>
+                <h1>Home</h1>
+                <a href="#login" class="ui-btn-right
+                    ui-btn ui-btn-inline
+                    ui-corner-all ui-icon-power
+                    ui-btn-icon-right">Logout</a>
+            </div>
+            <div class="ui-content">
+                <ul data-role="listview"
+                    data-filter="true"
+                    data-filter-placeholder="cari mobil anda"
+                    data-inset="true">
+                    <li><a href="#detailkerja">
+                        <h2>Avanza Veloz</h2>
+                        <p>Deadline 12/09/2019</p>
+                        <span class="ui-li-count">On Procces</span>
+                    </a></li>
+                    <li><a href="#detailkerja">
+                        <h2>Ertiga</h2>
+                        <p>Deadline 12/09/2019</p>
+                        <span class="ui-li-count">Selesai</span>
+                    </a></li>
+                    
+                </ul>
+            </div>
+        
+            <div data-role="footer"
+                data-position="fixed">
+                <h3>Rich Mobil</h3>
+            </div>
+        </div>
+
+        <div data-role="page" id="profile">
+            <div data-role="header">
+                <a href="" data-rel="back">Back</a>
+                <h1>Profile</h1>
+            </div>
+            <div class="ui-content">
+                <div class="ui-field-contain">
+                    <label for="nama">Nama</label>
+                    <input type="text" name="nama">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Rich Mobil</h3>
+            </div>
+        </div>
+
+        <div data-role="page" id="detailkerja">
+            <div data-role="header">
+                <a href="" data-rel="back">Back</a>
+                <h1>Detail Kerja</h1>
+                <a href="#Home" class="ui-btn-right
+                    ui-btn ui-btn-inline
+                    ui-corner-all">Selesai</a>
+            </div>
+            <div class="ui-content">
+                <div class="ui-field-contain">
+                    <label for="judul">Mobil</label>
+                    <input type="text" name="mobil">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="tanggal">Supir</label>
+                    <input type="text" name="Supir">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="deadline">Estimasi</label>
+                    <input type="text" name="estimasi">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="deadline">Tanggal diambil</label>
+                    <input type="text" name="tanggal diambi">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="deadline">Tanggal dikembalikan</label>
+                    <input type="text" name="tanggal dikembalikan">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="deskripsi">Deskripsi</label>
+                    <textarea name="deskripsi" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <label for="komentar">Komentar</label>
+                        <input type="text" name="komentar">
+                        <button class="ui-btn">Kirim</button>
+                    </li>
+                    <li>
+                        <h2>Budi</h2>
+                        <span class="ui-li-count">09/12/2019</span>
+                        <p>Susah bersihkan</p>
+                    </li>
+                    <li>
+                        <h2>Budi</h2>
+                        <span class="ui-li-count">09/12/2019</span>
+                        <p>Susah bersihkan</p>
+                    </li>
+                    <li>
+                        <h2>Budi</h2>
+                        <span class="ui-li-count">09/12/2019</span>
+                        <p>Susah bersihkan</p>
+                    </li>
+                    <li>
+                        <h2>Budi</h2>
+                        <span class="ui-li-count">09/12/2019</span>
+                        <p>Susah bersihkan</p>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Rich Mobil</h3>
+            </div>
+        </div>
+
+        <div data-role="page" id="password">
+            <div data-role="header">
+                <a href="" data-rel="back">Back</a>
+                <h1>Ganti Password</h1>
+            </div>
+            <div class="ui-content">
+                <div class="ui-field-contain">
+                    <label for="passwordlama">Password Lama</label>
+                    <input type="password" name="passwordlama">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="passwordbaru">Password Baru</label>
+                    <input type="password" name="passwordbaru">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="konfirmpassword">Konfirm Password</label>
+                    <input type="password" name="konfirmpassword" >
+                </div>
+                <button class="ui-btn">Simpan</button>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Rich Mobil</h3>
+            </div>
+        </div>
+
+        <div data-role="page" id="pesanan">
+            <div data-role="header">
+                <a href="" data-rel="back">Back</a>
+                <h1>Tipe Mobil</h1>
+            </div>
+            <div class="ui-content">
+                <ul data-role="listview"
+                    data-inset="true">
+
+                    <li><a href="#detailmobil">
+                        <h2>Avanza veloz</h2>
+                        <p>Tersedia</p>
+                    </a></li>
+
+                    <li><a href="#detailmobil">
+                        <h2>Ertiga </h2>
+                        <p>Tersedia</p>
+                    </a></li>
+
+                    <li><a href="#detailmobil">
+                        <h2>Inova </h2>
+                        <p>Tersedia</p>
+                    </a></li>
+
+                    <li><a href="#detailmobil">
+                        <h2>Calya </h2>
+                        <p>Tersedia</p>
+                    </a></li>
+
+                    <li><a href="#detailmobil">
+                        <h2>Jazz </h2>
+                        <p>Tersedia</p>
+                    </a></li>
+
+                    <li><a href="#detailmobil">
+                        <h2>Pajero </h2>
+                        <p>Tersedia</p>
+                    </a></li>
+
+                    <li><a href="#detailmobil">
+                        <h2>Mobilio </h2>
+                        <p>Tersedia</p>
+                    </a></li>
+
+                    <li><a href="#detailmobil">
+                        <h2>Sienta </h2>
+                        <p>Tersedia</p>
+                    </a></li>
+
+                    <li><a href="#detailmobil">
+                        <h2>Xpander </h2>
+                        <p>Tersedia</p>
+                    </a></li>
+
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Rich Mobil</h3>
+            </div>
+        </div>
+
+        <div data-role="page" id="detailmobil">
+            <div data-role="header">
+                <a href="" data-rel="back">Back</a>
+                <h1>Pemesanan</h1>
+            </div>
+            <div class="ui-content">
+                <div class="ui-field-contain">
+                    <label for="judul">Kode Pemesanan</label>
+                    <input type="text" name="judul">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="tanggal">Tanggal Ambil</label>
+                    <input type="date"  name="tanggal">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="deadline">Tanggal Balik</label>
+                    <input type="date"  name="tanggal">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="deadline">Harga 1 hari</label>
+                    <input type="text" name="deadline">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="deadline">Total</label>
+                    <input type="text" name="deadline">
+                </div>
+             
+                </div>
+                    <a href="#Home" class="ui-btn">Pesan</a>
+                </div>
+               
+                <div data-role="footer" data-position="fixed">
+                    <h3>Rich Mobil</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="pilihan">
+            <div data-role="header">
+                <a href="" data-rel="back">Back</a>
+                <h1>Pilihan Mobil</h1>
+            </div>
+            <div class="ui-content">
+                <ul data-role="listview"
+                    data-inset="true">
+                    <li><a href="#mobil">
+                        <h2>Avanza veloz</h2>
+                        <p>BK 1998 NG</p>
+                    </a></li>
+
+                    <li><a href="#mobil">
+                        <h2>Ertiga </h2>
+                        <p>B 1990 NG</p>    
+                    </a></li>
+
+                    <li><a href="#mobil">
+                        <h2>Pajero Sport </h2>
+                        <p>B 1990 NG</p>    
+                    </a></li>
+
+                    <li><a href="#mobil">
+                        <h2>Inova</h2>
+                        <p>B 1990 NG</p>    
+                    </a></li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Rich Mobil</h3>
+            </div>
+        </div>
+
+        <div data-role="page" id="mobil">
+            <div data-role="header">
+                <a href="" data-rel="back">Back</a>
+                <h1>Detail mobil</h1>
+            </div>
+
+            <div class="ui-content">
+                <div class="ui-field-contain">
+                    <label for="judul">Mobil</label>
+                    <input type="text" name="judul">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="judul">Tipe</label>
+                    <input type="text" name="judul">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="judul">Tahun</label>
+                    <input type="text" name="judul">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="judul">BBM</label>
+                    <input type="text" name="judul">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="judul">Harga</label>
+                    <input type="text" name="judul">
+                </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h3>Rich Mobil</h3>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    </body>
+</html>

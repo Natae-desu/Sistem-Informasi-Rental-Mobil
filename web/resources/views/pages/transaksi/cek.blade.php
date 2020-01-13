@@ -22,7 +22,6 @@
             <div class="card-header bg-primary text-white">
                 <h3 class="card-title">Form transaksi</h3>
             </div>
-<<<<<<< HEAD
             <div class="card-body">
                 <form action=''
                     method="POST" autocomplete="off">
@@ -66,43 +65,6 @@
                         <select name="status" class="form-control">
                             <option value="pen">Lunas</option>
                             <option value="pen">Pending</option>
-=======
-            
-
-            <div class="panel panel-border panel-primary">
-                <div class="panel-heading"> 
-                    <h3 class="panel-title"><i class="fa fa-user-plus"></i> Detail Transaksi</h3> 
-                </div>  <div class="panel-body"> 
-                <div class="col-md-12 ">
-                
-                
-                <form method="POST" action="transaksi/proses.php?act=update" enctype="multipart/form-data">
-                 <input type="hidden" name="id" value="ORD-000109">
-                <table class="table table-bordered">
-                    <tbody>
-                        <tr>
-                            <td class="btn-primary" width="30%">Kode Transaksi</td>
-                            <td>001321</td>
-                        </tr>
-                        <tr>
-                            <td class="btn-primary" width="30%">Tanggal Transaksi</td>
-                            <td>1 Januari 2019</td>
-                        </tr>
-                        <tr>
-                            <td class="btn-primary" width="30%">Nama Lengkap</td>
-                            <td>Adriyana Fajar</td>
-                        </tr>
-                        <tr>
-                            <td class="btn-primary" width="30%">Telepon</td>
-                            <td>082364695537 </td>
-                        </tr>
-                        <tr> 
-                            <td class="btn-primary" width="30%">Tipe Pembayaran</td>
-                            <td>
-                             <select name="status" class="form-control">
-                             <option value="Lunas" selected="">Bayar di tempat</option>
-                             <option value="Lunas" selected="">Transfer via rek Bank</option>
->>>>>>> 5ee1a8742698d303e79f2d9110cd6df96bf19a4f
                             </select>
                             </td>
                         </tr>

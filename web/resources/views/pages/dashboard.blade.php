@@ -30,10 +30,10 @@
                     <div class="small-box bg-info">
                         <div class="inner">
                             <h3>8</h3>
-                            <p>Supir</p>
+                            <p>Kerjaan diberikan</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-bag"></i>
+                            <i class="fa fa-tasks"></i>
                         </div>
                         <a href="#" class="small-box-footer">More info <i
                                 class="fas fa-arrow-circle-right"></i></a>
@@ -46,10 +46,10 @@
                         <div class="inner">
                             <h3>44</h3>
 
-                            <p>User Registrations</p>
+                            <p>Masih Pending</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-person-add"></i>
+                            <i class="fa fa-pause-circle"></i>
                         </div>
                         <a href="#" class="small-box-footer">More info <i
                                 class="fas fa-arrow-circle-right"></i></a>
@@ -61,10 +61,10 @@
                     <div class="small-box bg-danger">
                         <div class="inner">
                             <h3>30 </h3>
-                            <p>Unit Mobil</p>
+                            <p>Sedang Proses</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-pie-graph"></i>
+                            <i class="fa fa-cogs"></i>
                         </div>
                         <a href="#" class="small-box-footer">More info <i
                                 class="fas fa-arrow-circle-right"></i></a>
@@ -78,10 +78,10 @@
                         <div class="inner">
                             <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-                            <p>Laporan</p>
+                            <p>Selesai</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
+                            <i class="fa fa-check"></i>
                         </div>
                         <a href="#" class="small-box-footer">More info <i
                                 class="fas fa-arrow-circle-right"></i></a>
