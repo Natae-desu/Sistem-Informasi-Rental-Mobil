@@ -90,7 +90,7 @@
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>
-                        <p> Laporan Mobil
+                        <p>Laporan Mobil
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
