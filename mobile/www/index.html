@@ -28,7 +28,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -52,7 +52,8 @@
                     <input type="password" name="password"
                         placeholder="masukkan password anda">
                 </div>
-                <a href="#Home" class="ui-btn">Login</a>
+                <button class="ui-btn" id="btnlogin">Login</button>
+
             </div>
             <div data-role="footer" data-position="fixed">
                 <h3>Rich Mobil</h3>
@@ -227,55 +228,13 @@
             </div>
             <div class="ui-content">
                 <ul data-role="listview"
-                    data-inset="true">
-
-                    <li><a href="#detailmobil">
-                        <h2>Avanza veloz</h2>
-                        <p>Tersedia</p>
-                    </a></li>
-
-                    <li><a href="#detailmobil">
-                        <h2>Ertiga </h2>
-                        <p>Tersedia</p>
-                    </a></li>
-
-                    <li><a href="#detailmobil">
-                        <h2>Inova </h2>
-                        <p>Tersedia</p>
-                    </a></li>
-
-                    <li><a href="#detailmobil">
-                        <h2>Calya </h2>
-                        <p>Tersedia</p>
-                    </a></li>
-
-                    <li><a href="#detailmobil">
-                        <h2>Jazz </h2>
-                        <p>Tersedia</p>
-                    </a></li>
-
-                    <li><a href="#detailmobil">
-                        <h2>Pajero </h2>
-                        <p>Tersedia</p>
-                    </a></li>
-
-                    <li><a href="#detailmobil">
-                        <h2>Mobilio </h2>
-                        <p>Tersedia</p>
-                    </a></li>
-
-                    <li><a href="#detailmobil">
-                        <h2>Sienta </h2>
-                        <p>Tersedia</p>
-                    </a></li>
-
-                    <li><a href="#detailmobil">
-                        <h2>Xpander </h2>
-                        <p>Tersedia</p>
-                    </a></li>
-
+                    data-filter="true"
+                    data-filter-placeholder="cari mobil"
+                    data-inset="true" id="daftarpesan">
+                
                 </ul>
             </div>
+
             <div data-role="footer" data-position="fixed">
                 <h3>Rich Mobil</h3>
             </div>
@@ -326,26 +285,10 @@
             </div>
             <div class="ui-content">
                 <ul data-role="listview"
-                    data-inset="true">
-                    <li><a href="#mobil">
-                        <h2>Avanza veloz</h2>
-                        <p>BK 1998 NG</p>
-                    </a></li>
-
-                    <li><a href="#mobil">
-                        <h2>Ertiga </h2>
-                        <p>B 1990 NG</p>    
-                    </a></li>
-
-                    <li><a href="#mobil">
-                        <h2>Pajero Sport </h2>
-                        <p>B 1990 NG</p>    
-                    </a></li>
-
-                    <li><a href="#mobil">
-                        <h2>Inova</h2>
-                        <p>B 1990 NG</p>    
-                    </a></li>
+                    data-filter="true"
+                    data-filter-placeholder="cari mobil"
+                    data-inset="true" id="daftarmobil">
+                
                 </ul>
             </div>
             <div data-role="footer" data-position="fixed">
@@ -361,24 +304,24 @@
 
             <div class="ui-content">
                 <div class="ui-field-contain">
-                    <label for="judul">Mobil</label>
-                    <input type="text" name="judul">
+                    <label for="merekmobil">Merek</label>
+                    <input type="text" name="merekmobil">
                 </div>
                 <div class="ui-field-contain">
-                    <label for="judul">Tipe</label>
-                    <input type="text" name="judul">
+                    <label for="typemobil">Tipe</label>
+                    <input type="text" name="typemobil">
                 </div>
                 <div class="ui-field-contain">
-                    <label for="judul">Tahun</label>
-                    <input type="text" name="judul">
+                    <label for="tahunmobil">Tahun</label>
+                    <input type="text" name="tahunmobil">
                 </div>
                 <div class="ui-field-contain">
-                    <label for="judul">BBM</label>
-                    <input type="text" name="judul">
+                    <label for="bbm">BBM</label>
+                    <input type="text" name="bbm">
                 </div>
                 <div class="ui-field-contain">
-                    <label for="judul">Harga</label>
-                    <input type="text" name="judul">
+                    <label for="hargamobil">Harga</label>
+                    <input type="text" name="hargamobil">
                 </div>
 
             <div data-role="footer" data-position="fixed">
@@ -389,5 +332,184 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+        <script>
+            $("#btnlogin").on("click",function(){
+                var email = $("input[name='email']").val();
+                var password = $("input[name='password']").val();
+
+                $.post("http://127.0.0.1:8000/api/login",
+                        {email: email,password: password},
+                function(data){
+                    if(data.status == true){
+                        $(":mobile-pagecontainer")
+                            .pagecontainer("change","#Home");
+                        localStorage.setItem("pelanggan",data.idpelanggan);
+                    }else{
+                        alert("Email Password Salah");
+                    }
+                },"json");
+            });
+            
+            // $(document).on("pageshow","#profile",function(){
+            //     var idstaff = localStorage.getItem("staff");
+
+            //     $.get("http://127.0.0.1:8000/api/profile/"+idstaff,
+            //     function(data){
+            //         $("input[name='nama']").val(data.nama);
+            //         $("input[name='email']").val(data.email);
+            //         $("input[name='department']").val(data.dept);
+            //         $("img[name='profilepic']").attr("src","http://127.0.0.1:8000/storage/profile/staff/"+data.profilepic).enhanceWithin();
+            //     },"json");
+            // });
+
+            $(document).on("pageshow","#pilihan",function(){
+                
+                $.get("http://127.0.0.1:8000/api/listmobil",
+                function(data){
+                    var ul = $("#daftarmobil");
+
+                    ul.empty();
+                    $.map(data,function(value,key){
+                        ul.append("<li><a href='#mobil' data-id='"+ value.idmobil +"'>" +
+                                        "<h2>"+ value.merek +" "+value.type+"</h2>" +
+                                        "<span class='ui-li-count'>"+ value.unit +" Unit</span>" +
+                                    "</a></li>");
+                    });
+                    ul.listview("refresh");
+                },"json");
+            });
+
+            $(document).on("pageshow","#pesanan",function(){
+                
+                $.get("http://127.0.0.1:8000/api/listpesan",
+                function(data){
+                    var ul = $("#daftarpesan");
+
+                    ul.empty();
+                    $.map(data,function(value,key){
+                        ul.append("<li><a href='#detailmobil' data-id='"+ value.idmobil +"'>" +
+                                        "<h2>"+ value.merek +" "+value.type+"</h2>" +
+                                        "<span class='ui-li-count'> Tersedia</span>" +
+                                    "</a></li>");
+                    });
+                    ul.listview("refresh");
+                },"json");
+            });
+
+            // $("#btnlogout").on("click",function(){
+            //     localStorage.removeItem("staff");
+            //     $(":mobile-pagecontainer")
+            //                 .pagecontainer("change","#login");
+            // });
+
+            $("ul#daftarmobil").on("click","a",function(e){
+                e.preventDefault();
+                var idmobil = $(this).data("id");
+
+                $.get("http://127.0.0.1:8000/api/detailmobil/"+idmobil,
+                function(data){
+                    $("input[name='merekmobil']").val(data.merek);
+                    $("input[name='typemobil']").val(data.type);
+                    $("input[name='tahunmobil']").val(data.tahun);
+                    $("input[name='bbm']").val(data.bbm);
+                    $("input[name='hargamobil']").val(data.harga);
+                    
+                    ul.listview("refresh");
+                },"json");
+
+                $(":mobile-pagecontainer")
+                            .pagecontainer("change","#mobil");
+            });
+
+            // $("#btnSelesai").on("click",function(e){
+            //     e.preventDefault();
+            //     idtask = $(this).data("idtask");
+
+            //     $.post("http://127.0.0.1:8000/api/status",
+            //     {"idkerja": idtask},
+            //     function(data){
+            //         if(data.status == true){
+            //             alert("Berhasil Update Status");
+            //             $(":mobile-pagecontainer")
+            //                 .pagecontainer("change","#listkerja");
+            //         }
+            //     },"json");
+            // });
+
+            // $("ul#daftarkomentar").on("click","#btnKirimKomentar",
+            // function(){
+            //     var idtask = $(this).data("idtask");
+            //     var idstaff = localStorage.getItem("staff");
+            //     var comment = $("input[name='komentar']").val();
+
+            //     $.post("http://127.0.0.1:8000/api/comment",
+            //     {"idtask": idtask,"idstaff": idstaff,"comment": comment},
+            //     function(data){
+            //         if(data.status == true){
+            //             $(":mobile-pagecontainer")
+            //                 .pagecontainer("change","#listkerja");
+            //         }
+            //     },"json");
+            // });
+
+            // $("#btnRubahPassword").on("click",function(){
+            //     var passwordbaru = 
+            //         $("input[name='passwordbaru']").val();
+            //     var passwordbaru_confirmation = 
+            //         $("input[name='konfirmpassword']").val(); 
+            //     var idstaff = localStorage.getItem("staff");
+
+            //     $.post("http://127.0.0.1:8000/api/password",
+            //     {"idstaff":idstaff,"passwordbaru": passwordbaru,"passwordbaru_confirmation": passwordbaru_confirmation },
+            //     function(data){
+            //         if(data.status==true){
+            //             alert("Berhasil Rubah Password");
+            //             localStorage.removeItem("staff");
+            //             $(":mobile-pagecontainer")
+            //                         .pagecontainer("change","#login");
+            //         }
+            //     },"json");
+            // });
+
+            // $("input[name='profilepic'").on("change",function(){
+            //     var formdata = new FormData();
+            //     var files = $(this)[0].files[0]; 
+            //     var idstaff = localStorage.getItem("staff");
+
+            //     formdata.append("profilepic",files);
+            //     formdata.append("idstaff",idstaff);
+            //     $.ajax({ 
+            //         url: 'http://127.0.0.1:8000/api/profilepic', 
+            //         type: 'POST', 
+            //         data: formdata, 
+            //         contentType: false, 
+            //         processData: false, 
+            //         success: function(response){ 
+            //             if(response.status==true){
+            //                 alert("Berhasil update gambar profile");
+            //                 $("img[name='profilepic']").attr("src","http://127.0.0.1:8000/storage/profile/staff/"+response.profilepic).enhanceWithin();
+            //             }
+            //         }, 
+            //     }); 
+            // });
+
+            // function konversiStatus(status){
+            //     var namastatus="";
+
+            //     switch (status) {
+            //         case "pro":
+            //             namastatus = "Proses"; break;
+            //         case "pen":
+            //             namastatus = "Pending"; break;
+            //         case "sel":
+            //             namastatus = "Selesai"; break;
+            //         default:
+            //             namastatus = "Tidak Terdaftar"; break;
+            //     }
+
+            //     return namastatus;
+            // }
+        </script>
     </body>
 </html>
